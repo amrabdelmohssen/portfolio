@@ -1,0 +1,297 @@
+$mainColor : #007BFF;
+$socColor:#EEE;
+$colorCont3:#F0F0FE;
+$mainPadding: 30px 0px;
+$mainMargin: 30px 80px;
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.head{
+    text-align: center;
+    padding-top: 80px;
+    
+
+}
+
+
+
+.nav-bar{
+    padding: 0px;
+}
+
+.active{
+    background-color: $mainColor;
+    color:white;
+    opacity: 1;
+    font-weight:bold;
+}
+
+
+.nav-item{
+
+   
+    .nav-link{
+        opacity: 0.5;
+        background: linear-gradient(to left, #F8F8F8 50%, lightblue 50%) right;
+        background-size: 200%;
+
+    }
+    .nav-link:hover{
+        background-position: left;
+        transition: all 0.5s ;
+               
+
+        
+    }
+}
+
+.cont1{
+    background-image: url("../img/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+
+    >div:nth-child(1){
+
+        position: relative;
+        z-index: 44;
+        background-color: RGBA(49,81,92,0.8);
+        width: 100%;
+        height: 100vh;
+    }
+    
+    
+    >div:nth-child(2){
+    position: absolute;
+    z-index: 55;
+    background-color: transparent;
+
+         img{
+                border: 5px solid #EEE;
+                width: 12rem;
+                height: 12rem;
+            }
+
+            >h1,h6{
+                color: $socColor;
+            }
+    /* top: 50vh; */
+    /* left: 40%;
+    right: 60%; */
+    }
+    
+}
+
+.cont2{
+    background-color: $mainColor;
+    padding: 60px 0px;
+    margin: 30px;
+    border: 20px solid $socColor;
+    border-radius: 20px 200px;
+    border-bottom: none;
+    border-top: none;
+    animation: mymove 3s infinite;
+    color: white;
+    box-shadow: 0px 10px 10px gray;
+
+    >img{
+        opacity: 0.1;
+        position: absolute;
+        z-index: 2;
+        top: 120vh;
+        left: 10%;
+        width: 70%;
+    }
+
+    @keyframes mymove {
+        50% {box-shadow: 0px 30px 30px gray;}
+      }
+    // display: flex;
+    // flex-direction: column;
+
+    >div:nth-child(1){
+        display: flex;
+        flex-direction: row;
+    }
+    >div:nth-child(2){
+        padding: 40px 0px;
+        // background: url("../img/aboutme.png") no-repeat;
+        // background-position: right;
+
+    }
+}
+
+
+
+
+//--------------------------- education---------------------------------------------//
+
+.edu{
+    background-color: #50C6D8;
+    border: 1px solid transparent;
+    border-top-left-radius: 50% 10%;
+    border-top-right-radius: 50% 10%;
+    border-bottom: 10px dashed #EEE;
+    color:white;
+}
+.cont3{
+    margin:0px 0px 50px;
+    background-color: #50C6D8;
+    padding-top: 70px;
+  
+    >article{
+     border: 4px dotted $mainColor;
+     border-bottom-right-radius:80px ;
+
+     padding: 20px 30px;
+
+        // >div:nth-child(1){
+        //     padding: 4px;
+        //     border: 1px solid black;
+        //     border-radius: 50%;
+        // }
+
+        // .plogo{
+        //     background-color: white;
+
+        //  position: absolute;
+        //  right: 20%;
+        //  top: -14%;
+        //  z-index: 44;
+        //  width: 70px;
+        //  height: 70px;
+    
+        //  background-color: white;
+        // }
+     .logo{
+
+        outline: $colorCont3 solid 2px;
+        //  outline-offset: 10px;
+         position: absolute;
+         right: -7%;
+         top: -15%;
+         z-index: 44;
+         width: 70px;
+         height: 70px;
+         border: 8px solid white;
+         border-radius: 50%;
+         background-color: $colorCont3;
+
+     }
+
+     .row>p{
+         background-color: $colorCont3;
+         padding: 10px 10px;
+         border: 1px solid transparent;
+         border-radius: 5px;
+     }
+    }
+
+}
+
+// ---------------------------------services and projects --------------------------------------//
+.serv{
+    background-color: $socColor;
+    .cont4{
+        
+
+
+        >div{
+            //  margin: 30px;
+             
+            box-shadow: 0px 0px 20px gray;
+            border: 1px solid transparent;
+            border-radius: 8px;
+        }
+
+
+        i{
+            padding-top: 20px;
+            font-size: 50px;
+            color: $mainColor;
+            text-align: center;
+        }
+    }
+
+   
+}
+
+.proj{
+    // background-image: url("../img/logo.png");
+    // background-repeat: no-repeat;
+    // background-size: 80%;
+    // background-position: center;
+    opacity: 0.5;
+    background-color: #303027;
+    
+    a{
+        cursor: pointer;
+    }
+    button{
+        display: none;
+        position: absolute;
+  top: 50%;
+  left: 30%;
+//   transform: trasnslate(-50%, -50%);
+  z-index: 23;
+    
+    
+    }
+}
+
+.pr{
+    border-bottom: 1px solid transparent;
+    border-bottom-left-radius: 90% 21%;
+    border-bottom-right-radius: 90% 21%;
+
+}
+
+
+//------------------ contact------------------
+.contact{
+    i{
+        padding: 20px 0px;
+        font-size: 50px;
+        color: $mainColor;
+
+    }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .cont3{
+        article{
+            width: 80%;
+        }
+    }
+    .cont4{
+        >div{
+            margin: 20px 0px 0px;            
+        }
+    }
+}
+
+.pr{
+    border-bottom: none;
+
+}
+
+
+
+
+@media (max-width: 991px) {
+    // div:nth-child(2) img{
+    //     display: none;
+    // }
+}
+
